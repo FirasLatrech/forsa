@@ -1,0 +1,167 @@
+# Mous Kit Project Rules
+
+## Package Manager
+- **ALWAYS use Bun** as the primary package manager for all operations (install, run, build, etc.)
+- Use `bun install` instead of `npm install` or `yarn install`
+- Use `bun run` instead of `npm run` or `yarn run`
+
+## Project Architecture
+
+### App Router Structure
+- **All new features and pages MUST be created in the `src/app` directory**
+- Each new feature/page should have a **clean folder name** that clearly represents its purpose
+- **Every page folder MUST contain a `page.tsx` file**
+- **All page components MUST be Server Components** (no "use client" directive unless absolutely necessary)
+
+### Page Component Pattern
+```typescript
+// src/app/feature-name/page.tsx
+import FeatureNameView from "@/modules/feature-name/ui/views/feature-name-view";
+
+const page = async () => {
+    // Server-side logic here (auth checks, data fetching, etc.)
+    return <FeatureNameView />;
+};
+
+export default page;
+```
+
+### Module Structure
+- **Every feature MUST have a corresponding folder in `src/modules`**
+- Each module folder should follow this exact structure:
+
+```
+src/modules/
+├── feature-name/
+│   ├── ui/
+│   │   ├── views/
+│   │   │   └── feature-name-view.tsx
+│   │   └── components/ (optional - only if needed)
+│   │       └── feature-specific-component.tsx
+│   ├── hooks/ (optional - only if needed)
+│   │   └── use-feature-name.ts
+│   └── server/ (optional - only if needed)
+│       └── procedures.ts
+```
+
+### View Components
+- **All views MUST be Client Components** ("use client" directive required)
+- Views handle all client-side logic, state management, and user interactions
+- Views are imported and used by the corresponding page component
+- Naming convention: `feature-name-view.tsx`
+
+### Folder Organization Rules
+
+#### App Directory (`src/app/`)
+- Use kebab-case for folder names (e.g., `user-profile`, `order-history`)
+- Group related pages using route groups when appropriate: `(auth)`, `(dashboard)`, etc.
+- Each page folder must contain only a `page.tsx` file
+- No business logic in page components - delegate to views
+
+#### Modules Directory (`src/modules/`)
+- Mirror the app structure with corresponding module folders
+- Use the same kebab-case naming as the app folders
+- **Required subfolders:**
+  - `ui/` - Contains all UI-related code
+  - `ui/views/` - Contains view components (one per page)
+- **Optional subfolders (create only when needed):**
+  - `ui/components/` - Feature-specific components
+  - `hooks/` - Custom hooks for the feature
+  - `server/` - Server actions and utilities
+
+### Component Guidelines
+- **Shared components** go in `src/components/`
+- **Feature-specific components** go in `src/modules/feature-name/ui/components/`
+- Use PascalCase for component folder names in `src/components/`
+- Each component should have its own folder with an `index.tsx` file
+
+### File Naming Conventions
+- **Pages:** `page.tsx` (always)
+- **Views:** `feature-name-view.tsx`
+- **Components:** `ComponentName/index.tsx` or `component-name.tsx`
+- **Hooks:** `use-feature-name.ts`
+- **Server actions:** `procedures.ts`
+
+### Code Style Guidelines
+- Keep code **simple and clean**
+- **No comments needed** - code should be self-explanatory
+- Use TypeScript for all files
+- Follow the existing patterns for authentication, forms, and data fetching
+- Prefer composition over complex inheritance
+- Use proper TypeScript types and interfaces
+
+### Import Organization
+- Group imports in this order:
+  1. React/Next.js imports
+  2. Third-party library imports
+  3. Internal imports (components, utils, etc.)
+  4. Relative imports
+
+### Example Feature Implementation
+
+For a new feature called "user-profile":
+
+1. **Create the page:**
+```typescript
+// src/app/user-profile/page.tsx
+import { auth } from "@/lib/auth";
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+import UserProfileView from "@/modules/user-profile/ui/views/user-profile-view";
+
+const page = async () => {
+    const session = await auth.api.getSession({
+        headers: await headers(),
+    });
+    
+    if (!session) {
+        redirect("/sign-in");
+    }
+    
+    return <UserProfileView />;
+};
+
+export default page;
+```
+
+2. **Create the module structure:**
+```
+src/modules/user-profile/
+├── ui/
+│   └── views/
+│       └── user-profile-view.tsx
+```
+
+3. **Create the view component:**
+```typescript
+// src/modules/user-profile/ui/views/user-profile-view.tsx
+"use client";
+
+import { useState } from "react";
+// ... other imports
+
+const UserProfileView = () => {
+    // Client-side logic here
+    return (
+        <div>
+            {/* UI implementation */}
+        </div>
+    );
+};
+
+export default UserProfileView;
+```
+
+### Development Workflow
+1. Always use `bun` for package management
+2. Create the page in `src/app/` first
+3. Create the corresponding module structure in `src/modules/`
+4. Implement the view component with client-side logic
+5. Add any feature-specific components, hooks, or server actions as needed
+6. Test the complete flow before considering the feature complete
+
+## Enforcement
+- These rules are **mandatory** for all new features and pages
+- Existing code should be gradually refactored to follow these patterns
+- Any deviation from these rules requires explicit justification
+- Code reviews should enforce these architectural decisions
