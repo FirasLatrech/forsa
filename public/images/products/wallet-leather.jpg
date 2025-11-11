@@ -1,0 +1,7 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#f5f0e8"/>
+  <rect x="250" y="300" width="300" height="200" rx="10" fill="#8b5a3c" stroke="#6b4a2c" stroke-width="3"/>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">Leather</text>
+  <text x="400" y="490" font-family="Arial, sans-serif" font-size="42" fill="#ffe4b5" text-anchor="middle">Wallet</text>
+  <text x="400" y="720" font-family="Arial, sans-serif" font-size="32" fill="#8b5a3c" text-anchor="middle">Genuine Leather</text>
+</svg>

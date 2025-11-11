@@ -41,7 +41,7 @@ const Button: React.FC<ButtonProps> = ({
 
     return (
         <Component
-            className={`relative inline-flex justify-center items-center h-10 px-6 rounded-xl text-heading-str ${
+            className={`relative inline-flex justify-center items-center h-10 px-6 rounded-xl text-label-md ${
                 isPrimary
                     ? "bg-gradient-to-b from-[#E5E5E5] to-[#E2E2E2] shadow-[0_3px_4px_-1px_rgba(0,0,0,0.15),0px_1px_0px_0px_rgba(255,255,255,0.33)_inset,0px_0px_0px_1px_#D4D4D4] after:absolute after:inset-0 after:rounded-xl after:bg-white/30 after:opacity-0 after:transition-opacity hover:after:opacity-100"
                     : ""
@@ -54,6 +54,7 @@ const Button: React.FC<ButtonProps> = ({
                     ? "bg-gradient-to-b from-[#E36323] to-[#DF5A18] shadow-[0px_1px_0px_0px_rgba(255,255,255,0.33)_inset,0px_0px_0px_1px_#BF4A0F,0px_3px_4px_-1px_rgba(252,96,16,0.95)] text-shade-01 fill-shade-01 after:absolute after:inset-0 after:rounded-xl after:bg-white/10 after:opacity-0 after:transition-opacity hover:after:opacity-100"
                     : ""
             } ${className || ""}`}
+            style={{ fontFamily: 'Cairo, sans-serif' }}
             {...(isLink ? (props as LinkProps) : props)}
         >
             {icon && <Icon className="relative z-2" name={icon} />}

@@ -1,0 +1,7 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#e8f8f5"/>
+  <rect x="250" y="150" width="300" height="450" rx="30" fill="#16a085" stroke="#138d75" stroke-width="4"/>
+  <circle cx="400" cy="250" r="40" fill="#0e6655" stroke="#0a4d3f" stroke-width="3"/>
+  <text x="400" y="670" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">Casual</text>
+  <text x="400" y="730" font-family="Arial, sans-serif" font-size="32" fill="#16a085" text-anchor="middle">Backpack</text>
+</svg>

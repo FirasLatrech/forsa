@@ -1,0 +1,8 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#f0fff4"/>
+  <ellipse cx="380" cy="420" rx="300" ry="130" fill="#27ae60" stroke="#229954" stroke-width="5"/>
+  <ellipse cx="380" cy="400" rx="280" ry="100" fill="#2ecc71"/>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="52" fill="#333" text-anchor="middle" font-weight="bold">Running</text>
+  <text x="400" y="340" font-family="Arial, sans-serif" font-size="46" fill="#666" text-anchor="middle">Shoes</text>
+  <text x="400" y="720" font-family="Arial, sans-serif" font-size="32" fill="#27ae60" text-anchor="middle">Extra Cushioning</text>
+</svg>

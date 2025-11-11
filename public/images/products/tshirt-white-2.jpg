@@ -1,0 +1,6 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#fafafa"/>
+  <circle cx="400" cy="350" r="200" fill="#ffffff" stroke="#e0e0e0" stroke-width="4"/>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="42" fill="#333" text-anchor="middle">White T-Shirt</text>
+  <text x="400" y="420" font-family="Arial, sans-serif" font-size="36" fill="#888" text-anchor="middle">Side View</text>
+</svg>

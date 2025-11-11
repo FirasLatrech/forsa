@@ -1,0 +1,5 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#fafaff"/>
+  <path d="M 250 200 Q 400 150 550 200 L 550 550 Q 400 600 250 550 Z" fill="#9b59b6" stroke="#7d3c98" stroke-width="4"/>
+  <text x="400" y="400" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle">Hoodie Detail</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#f8f8ff"/>
+  <path d="M 250 200 Q 400 150 550 200 L 550 550 Q 400 600 250 550 Z" fill="#8e44ad" stroke="#6c3483" stroke-width="4"/>
+  <circle cx="400" cy="250" r="80" fill="#9b59b6"/>
+  <text x="400" y="680" font-family="Arial, sans-serif" font-size="48" fill="#333" text-anchor="middle" font-weight="bold">Cotton</text>
+  <text x="400" y="740" font-family="Arial, sans-serif" font-size="42" fill="#8e44ad" text-anchor="middle">Hoodie</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#f0f0f0"/>
+  <rect x="200" y="250" width="400" height="300" rx="15" fill="#34495e" stroke="#2c3e50" stroke-width="4"/>
+  <rect x="220" y="270" width="360" height="260" fill="#95a5a6"/>
+  <text x="400" y="620" font-family="Arial, sans-serif" font-size="48" fill="#333" text-anchor="middle" font-weight="bold">Laptop</text>
+  <text x="400" y="680" font-family="Arial, sans-serif" font-size="42" fill="#666" text-anchor="middle">Sleeve</text>
+  <text x="400" y="740" font-family="Arial, sans-serif" font-size="28" fill="#34495e" text-anchor="middle">15-inch Protection</text>
+</svg>

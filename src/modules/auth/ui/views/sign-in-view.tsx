@@ -68,7 +68,7 @@ const SignInView = () => {
                 Sign in with Google
             </Button>
             
-            <div className="my-6 text-center text-body-sm text-tertiary">Or sign in with email</div>
+            <div className="my-6 text-center text-label-sm text-tertiary">Or sign in with email</div>
             
             {error && (
                 <div className="mb-4 p-3 text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg">
@@ -101,7 +101,7 @@ const SignInView = () => {
             </Button>
 
             <div className="mt-4 text-center">
-                <Link className="text-body-sm text-secondary transition-colors hover:text-primary" href="/sign-up">
+                <Link className="text-label-sm text-secondary transition-colors hover:text-primary" href="/sign-up">
                     Need an account?
                 </Link>
             </div>

@@ -28,7 +28,7 @@ const Login = ({ title, image, children }: Props) => (
                 <Icon className="!size-6 fill-shade-01" name="volume" />
             </button>
             {/* <PanelMessage className="!absolute !bottom-14" /> */}
-            <div className="absolute left-0 right-0 bottom-5 text-center text-body-lg text-surface-01">
+            <div className="absolute left-0 right-0 bottom-5 text-center text-label-lg text-surface-01">
                 Try Mouse Kit for free
             </div>
         </div>

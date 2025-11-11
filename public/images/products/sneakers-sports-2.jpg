@@ -1,0 +1,5 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#fffbf0"/>
+  <ellipse cx="400" cy="400" rx="280" ry="120" fill="#ff8855" stroke="#e05520" stroke-width="4"/>
+  <text x="400" y="410" font-family="Arial, sans-serif" font-size="42" fill="#ffffff" text-anchor="middle">Sneakers Detail</text>
+</svg>

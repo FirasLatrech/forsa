@@ -1,0 +1,7 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#e8f4f8"/>
+  <rect x="200" y="200" width="400" height="400" rx="20" fill="#4a6fa5" stroke="#3a5a85" stroke-width="4"/>
+  <text x="400" y="370" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">Denim</text>
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="42" fill="#e0e8f0" text-anchor="middle">Jacket</text>
+  <text x="400" y="720" font-family="Arial, sans-serif" font-size="32" fill="#666" text-anchor="middle">Stylish & Durable</text>
+</svg>

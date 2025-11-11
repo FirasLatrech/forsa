@@ -1,0 +1,8 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#f0f8ff"/>
+  <circle cx="320" cy="400" r="80" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+  <circle cx="480" cy="400" r="80" fill="#1a1a1a" stroke="#000" stroke-width="3"/>
+  <text x="400" y="280" font-family="Arial, sans-serif" font-size="48" fill="#333" text-anchor="middle" font-weight="bold">Wireless</text>
+  <text x="400" y="330" font-family="Arial, sans-serif" font-size="42" fill="#666" text-anchor="middle">Earbuds</text>
+  <text x="400" y="720" font-family="Arial, sans-serif" font-size="32" fill="#1a73e8" text-anchor="middle">Noise Cancellation</text>
+</svg>

@@ -3,6 +3,7 @@ import {
     QueryClient,
   } from '@tanstack/react-query';
   import superjson from 'superjson';
+  
   export function makeQueryClient() {
     return new QueryClient({
       defaultOptions: {
@@ -20,4 +21,12 @@ import {
         },
       },
     });
+  }
+
+  let clientQueryClientSingleton: QueryClient | undefined = undefined;
+  export function getQueryClient() {
+    if (typeof window === 'undefined') {
+      return makeQueryClient();
+    }
+    return (clientQueryClientSingleton ??= makeQueryClient());
   }

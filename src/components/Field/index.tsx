@@ -28,16 +28,16 @@ const Field = ({
     React.InputHTMLAttributes<HTMLInputElement> &
     React.TextareaHTMLAttributes<HTMLTextAreaElement>) => {
     return (
-        <div className={`${className || ""}`}>
+        <div className={`${className || ""}`} style={{ fontFamily: 'Cairo, sans-serif' }}>
             {label && (
-                <div className="flex items-center mb-2">
-                    <div className="mr-auto">{label}</div>
+                <div className="flex items-center mb-2" dir="rtl">
+                    <div className="ml-auto">{label}</div>
                     {forgotPassword && (
                         <Link
-                            className="text-body-sm text-secondary transition-colors hover:text-primary"
+                            className="text-label-sm font-arabic text-secondary transition-colors hover:text-primary"
                             href="/reset-password"
                         >
-                            Forgot password?
+                            نسيت الباسوورد؟
                         </Link>
                     )}
                 </div>
@@ -46,17 +46,21 @@ const Field = ({
                 {children}
                 {textarea ? (
                     <textarea
-                        className={`w-full h-20 px-5.5 py-4 border-[1.5px] border-s-01 rounded-xl text-body-lg text-primary transition-colors resize-none outline-0 focus:border-s-02 ${
+                        className={`w-full h-20 px-5.5 py-4 border-[1.5px] border-s-01 rounded-xl text-label-lg text-primary transition-colors resize-none outline-0 focus:border-s-02 ${
                             validated ? "pr-10" : ""
                         }  ${classInput || ""}`}
+                        style={{ fontFamily: 'Cairo, sans-serif' }}
+                        dir="rtl"
                         {...inputProps}
                     ></textarea>
                 ) : (
                     <input
-                        className={`w-full h-12 px-5.5 border-[1.5px] border-s-01 rounded-xl text-body-lg text-primary transition-colors outline-0 focus:border-s-02 ${
+                        className={`w-full h-12 px-5.5 border-[1.5px] border-s-01 rounded-xl text-label-lg text-primary transition-colors outline-0 focus:border-s-02 ${
                             validated ? "pr-10" : ""
                         } ${classInput || ""}`}
                         type={type || "text"}
+                        style={{ fontFamily: 'Cairo, sans-serif' }}
+                        dir="rtl"
                         {...inputProps}
                     />
                 )}
@@ -67,7 +71,7 @@ const Field = ({
                     />
                 )}
             </div>
-            {error && <div className="mt-2 text-body-sm text-red">
+            {error && <div className="mt-2 text-label-sm text-red font-arabic" dir="rtl">
                 {error}
             </div>}
         </div>

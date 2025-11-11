@@ -1,0 +1,7 @@
+<svg width="800" height="800" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="800" fill="#fff8e1"/>
+  <ellipse cx="400" cy="400" rx="280" ry="120" fill="#ff6b35" stroke="#e05520" stroke-width="4"/>
+  <text x="400" y="390" font-family="Arial, sans-serif" font-size="48" fill="#ffffff" text-anchor="middle" font-weight="bold">Sports</text>
+  <text x="400" y="440" font-family="Arial, sans-serif" font-size="42" fill="#ffeeee" text-anchor="middle">Sneakers</text>
+  <text x="400" y="720" font-family="Arial, sans-serif" font-size="32" fill="#ff6b35" text-anchor="middle">Comfort & Style</text>
+</svg>

@@ -7,8 +7,12 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "biome check",
+    "format": "biome format --write",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
-    "format": "biome format --write"
+    "db:studio": "drizzle-kit studio",
+    "db:seed": "bun run src/db/seed.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.2",
@@ -20,10 +24,12 @@
     "dotenv": "^17.2.2",
     "drizzle-kit": "^0.31.5",
     "drizzle-orm": "^0.44.5",
+    "nanoid": "^5.1.6",
     "next": "^15.6.0-canary.32",
     "nuqs": "^2.6.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "react-error-boundary": "^6.0.0",
     "react-hook-form": "^7.63.0",
     "sass": "^1.93.2",
     "server-only": "^0.0.1",
